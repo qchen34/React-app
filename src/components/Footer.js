@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export default function Footer() {
     return (
-        <div className="main-footer">
+        <FooterContainer className="main-footer">
             <div className="footer-middle">
             <div className="container">
                 <div className="row">
@@ -12,9 +12,9 @@ export default function Footer() {
                         <h4>Lorem ipsum</h4>
                         <ul className="list-unstyled">
                             <li>Lorem2</li>
-                            <li>Lorem2</li>
-                            <li>Lorem2</li>
-                            <li>Lorem2</li>
+                            <li><a href="/">Lorem2</a></li>
+                            <li><a href="/">Lorem2</a></li>
+                            <li><a href="/">Lorem2</a></li>
 
                         </ul>
                     </div>
@@ -23,10 +23,10 @@ export default function Footer() {
                     <div className="col-md-3 col-sm-6">
                         <h4>Lorem ipsum</h4>
                         <ul className="list-unstyled">
-                            <li>Lorem2</li>
-                            <li>Lorem2</li>
-                            <li>Lorem2</li>
-                            <li>Lorem2</li>
+                            <li><a href="/">Lorem2</a></li>
+                            <li><a href="/">Lorem2</a></li>
+                            <li><a href="/">Lorem2</a></li>
+                            <li><a href="/">Lorem2</a></li>
 
                         </ul>
                     </div>
@@ -35,10 +35,10 @@ export default function Footer() {
                     <div className="col-md-3 col-sm-6">
                         <h4>Lorem ipsum</h4>
                         <ul className="list-unstyled">
-                            <li>Lorem2</li>
-                            <li>Lorem2</li>
-                            <li>Lorem2</li>
-                            <li>Lorem2</li>
+                            <li><a href="/">Lorem2</a></li>
+                            <li><a href="/">Lorem2</a></li>
+                            <li><a href="/">Lorem2</a></li>
+                            <li><a href="/">Lorem2</a></li>
 
                         </ul>
                     </div>
@@ -47,10 +47,10 @@ export default function Footer() {
                     <div className="col-md-3 col-sm-6">
                         <h4>Lorem ipsum</h4>
                         <ul className="list-unstyled">
-                            <li>Lorem2</li>
-                            <li>Lorem2</li>
-                            <li>Lorem2</li>
-                            <li>Lorem2</li>
+                            <li><a href="/">Lorem2</a></li>
+                            <li><a href="/">Lorem2</a></li>
+                            <li><a href="/">Lorem2</a></li>
+                            <li><a href="/">Lorem2</a></li>
 
                         </ul>
                     </div>
@@ -63,12 +63,28 @@ export default function Footer() {
                 </div>
             </div>
             </div>
-        </div>
+        </FooterContainer>
     )
 }
 
 const FooterContainer = styled.footer`
     .footer-middle {
         background: var(--mainDark);
+        padding-top: 3rem;
+        color: var(--mainWhite);
     }
+
+    .footer-bottom {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    ul li a {
+        color: var(--mainGrey);
+    }
+
+    ul li a:hover {
+        color: var(--mainLightGrey)
+    }
+
 `;
